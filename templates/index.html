@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Termsite</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="icon" href="/static/images/logo.png">
+        <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{ turbo() }}
+    </head>
+    <body>
+        <div class="top">
+            <div class="main">
+                <div id="clear">
+                <p>term@<span>site:$ ~</span></p>
+                <e>
+                <pre style="font-size: 10px;">
+
+▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓  ██████  ██▓▄▄▄█████▓▓█████ 
+▓  ██▒ ▓▒▓█   ▀ ▓██ ▒ ██▒▓██▒▀█▀ ██▒▒██    ▒ ▓██▒▓  ██▒ ▓▒▓█   ▀ 
+▒ ▓██░ ▒░▒███   ▓██ ░▄█ ▒▓██    ▓██░░ ▓██▄   ▒██▒▒ ▓██░ ▒░▒███   
+░ ▓██▓ ░ ▒▓█  ▄ ▒██▀▀█▄  ▒██    ▒██   ▒   ██▒░██░░ ▓██▓ ░ ▒▓█  ▄ 
+  ▒██▒ ░ ░▒████▒░██▓ ▒██▒▒██▒   ░██▒▒██████▒▒░██░  ▒██▒ ░ ░▒████▒
+  ▒ ░░   ░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░   ░  ░▒ ▒▓▒ ▒ ░░▓    ▒ ░░   ░░ ▒░ ░
+    ░     ░ ░  ░  ░▒ ░ ▒░░  ░      ░░ ░▒  ░ ░ ▒ ░    ░     ░ ░  ░
+  ░         ░     ░░   ░ ░      ░   ░  ░  ░   ▒ ░  ░         ░   
+            ░  ░   ░            ░         ░   ░              ░  ░
+                </pre>
+                Type 'help' to see a list of available commands.<br>
+                </e>
+
+                <div id="populate" style="padding-top: -1px">
+                </div>
+                
+                </div>
+                <p id="main_" style="display: inline-block;">term@<span>site:$ ~</span></p> <form id="main-form" style="display: inline;" method="POST"> <input id="enter" style="margin: 0 0 0 -2px;" type="text" autofocus name="command" autocomplete="off"></form>
+            </div>
+        </div>
+    </body>
+    <script src="../static/js/script.js"></script>
+</html>

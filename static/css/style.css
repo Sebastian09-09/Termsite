@@ -1,0 +1,120 @@
+:root{
+    --back : rgb(28,28,28) ;
+    --fore  : cyan ;
+    --special: violet ;
+    --text: #cac0ff ;
+    --link-hover: #05ff8f;
+    --link: #ffc400;
+    --error: crimson;
+    --font-size: 18px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+@font-face {
+    font-family: CascadiaCode;
+    src: url(CascadiaCode.ttf);
+}
+
+html{
+    margin: 0;
+    background-color: var(--back);
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    color: var(--fore);
+    font-family: CascadiaCode;
+    font-size: var(--font-size);
+    font-weight: 100;
+}
+
+span{
+    color: var(--special);
+}
+
+e{
+    color: var(--text);
+}
+
+em{
+    font-style: normal;
+    text-decoration: none;
+    color: var(--error);
+}
+
+a{
+    color: var(--link);
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 2px var(--link) solid;
+}
+
+.link{
+    color: var(--link);
+    text-decoration: none;
+    cursor: pointer;
+    border-top: 2px var(--link) solid;
+    border-bottom: 2px var(--link) solid;
+}
+
+a:hover{
+    color: var(--link-hover);
+    border-bottom: 2px var(--link-hover) solid;
+}
+
+.link:hover{
+    color: var(--link-hover);
+    border-top: 2px var(--link-hover) solid;
+    border-bottom: 2px var(--link-hover) solid;
+}
+
+fore{
+    color: var(--fore);
+}
+
+.main::-webkit-scrollbar {
+    width: 5px;
+}
+.main::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.main::-webkit-scrollbar-thumb {
+    background-color: var(--fore);
+    border-radius: 5px;
+}
+
+.top{
+    padding: 10px;
+    height: calc(100% - 5.5rem);
+}
+
+.main{
+    border: 2px var(--fore) solid;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 32px;
+}
+
+
+input[type=text]{
+    background-color: transparent;
+    border: none;
+    font-family: CascadiaCode;
+    font-size: var(--font-size);
+    font-weight: 100;
+    color: var(--fore);
+    width: calc(100% - 211px);
+}
+
+input[type=text]:focus-visible{
+    outline: none;
+}
+
+#main-form{
+    margin: 0;
+    width: 100%;
+}
